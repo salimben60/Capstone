@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Capstone Project</title>
+    <title>Jobs4everyone</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Capstone Project</a>
+                <a class="navbar-brand" href="#page-top">Jobs4everyone</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,7 +73,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name">Capstone Project Title</span>
+                        <span class="name"><h3>No resumes required, multiple positions filled quickly</h3></span>
                         <hr class="star-light">
                         <span class="skills">Mall Employees - Large Catering Events - Cleaning Services</span>
                     </div>
@@ -248,6 +248,8 @@
                     <a href="views/joblists.html" class="btn btn-lg btn-outline">
                        <!-- <i class="fa fa-download"></i>--> List Jobs
                     </a>
+                    <a href="views/fireauth.html" class="btn btn-lg btn-outline">Login</a>
+
                 </div>
             </div>
         </div>
@@ -325,21 +327,51 @@
                             <h2>Cleaning Services</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
+                            <p>Describe the positions for Cleaning Services</p>
+
+                            <ul class="list-inline item-details">  <h6>Top 3 employers</h6>
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    <strong><a href="http://startbootstrap.com">ProCleaning</a>
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                <li>Start Date
+                                    <strong><a href="http://startbootstrap.com">December 2016</a>
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Number of positions
+                                    <strong><a href="http://startbootstrap.com">20 openinings</a>
                                     </strong>
                                 </li>
                             </ul>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">ProCleaning</a>
+                                    </strong>
+                                </li>
+                                <li>Start Date
+                                    <strong><a href="http://startbootstrap.com">December 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Number of positions
+                                    <strong><a href="http://startbootstrap.com">20 openinings</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">ProCleaning</a>
+                                    </strong>
+                                </li>
+                                <li>Start Date
+                                    <strong><a href="http://startbootstrap.com">December 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Number of positions
+                                    <strong><a href="http://startbootstrap.com">20 openinings</a>
+                                    </strong>
+                                </li>
+                            </ul>
+
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -552,3 +584,31 @@
 </body>
 
 </html>
+
+<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    // TODO: Replace with your project's customized code snippet
+    var config = {
+        apiKey: "AIzaSyAanbxkP16O9HZVsXWU61k_g_kIjc-jwb4",
+        authDomain: "moonlit-ceiling-146704.firebaseapp.com",
+        databaseURL: "https://moonlit-ceiling-146704.firebaseio.com/",
+        storageBucket: "moonlit-ceiling-146704.appspot.com"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js"></script>
+
+<!-- Leave out Storage -->
+<!-- <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-storage.js"></script> -->
+
+<script>
+    var config = {
+        // ...
+    };
+    firebase.initializeApp(config);
+</script>
