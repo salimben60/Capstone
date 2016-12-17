@@ -21,7 +21,7 @@
     "jquery": "^1.11.3"
   },
   "scripts": {
-    "start":"index.html"
+    "start":"app.js"
   },
   "repository": {
     "type": "git",
